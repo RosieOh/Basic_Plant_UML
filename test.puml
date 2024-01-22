@@ -1,0 +1,31 @@
+@startuml
+
+autoactivate on
+
+title 일상 생활
+
+actor 나 as user
+
+box "나"
+participant 집 as home
+participant 회사 as company
+participant 도서관 as library
+end box
+
+user -> home : 일해라
+home -> home : 출근 준비
+home -> company : 출근
+note right
+    8시간 업무
+end note
+company -> library : 공부
+note right
+    4시간 공부
+end note
+library --> home : 퇴근
+home --> user : 인강...
+
+@enduml
+
+
+<!-- 이거 괜찮은데? -->
